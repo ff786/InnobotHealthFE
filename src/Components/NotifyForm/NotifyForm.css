@@ -1,0 +1,39 @@
+.md {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: auto;
+}
+.main-dom {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.ml {
+   font-family: serif;
+   font-size: 18px;
+}
+.scheduled-options {
+    height: 150px; /* Set a fixed height */
+    visibility: visible; /* Initially visible */
+}
+
+.scheduled-options.hidden {
+    visibility: hidden; /* Hide when not needed */
+}
+.ntf .expand {
+    max-height: 100px;
+}
+
+input[type="subject"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}

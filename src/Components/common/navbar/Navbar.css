@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #02072D;
+    margin-right: 30px;
+    height: wrap-content;
+  }
+
+.navbar-item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-left: 30px;
+    color: inherit;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    outline: none;
+    height: auto;
+    z-index: 2;
+}
+  /* Navbar.css */
+
+
+/* Enlarge the FaBell and FaSignOutAlt icons */
+.navbar-item .fa-bell,
+.navbar-item .fa-sign-out-alt {
+  font-size: 30px; /* Adjust the icon size as needed */
+  color: #68F0F5;
+ 
+}
+.navbar_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  color: inherit;
+  text-decoration: inherit;
+  text-transform: uppercase;
+  outline: none;
+  
+}
+.profile-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.profile-icon-container svg {
+  position: relative;
+  z-index: 1; /* Set a higher z-index to place it above the circle */
+}
+
+/* delete this part when fixing responsive */
+
+@media (max-width: 768px) {
+  .navbar {
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-item {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .navbar-item .fa-bell,
+  .navbar-item .fa-sign-out-alt {
+    font-size: 24px; /* Adjust the icon size for smaller screens */
+  }
+}
+
+

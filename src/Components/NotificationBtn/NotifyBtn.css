@@ -1,0 +1,66 @@
+.notification-container {
+  position: sticky;
+  z-index: 3;
+}
+
+.notification-icon {
+  cursor: pointer;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  background-color: red;
+  color: #fff;
+  text-width: bold;
+  border-radius: 60%;
+  padding: 1px 6px;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+  overflow: hidden;
+  overflow-y: auto;
+  max-height: 500px;
+  width: 400px;
+  margin-right: 3vw;
+}
+
+.notification-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.notification-item {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.notification-item:hover {
+  background-color: #f3f3f3;
+}
+
+.icon-button {
+  margin: 5px;
+}
+
+

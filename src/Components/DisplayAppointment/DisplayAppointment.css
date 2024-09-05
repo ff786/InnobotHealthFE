@@ -1,0 +1,15 @@
+.horizontal-line {
+    border: none;
+    border-top: 40px solid #9da8fb;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   margin-top: 0.01%;
+}
+.fixtheborder{
+    margin-top: 0.01%;
+}
+.het{
+    margin-top: -25%; 
+    margin-left: 105%;
+}

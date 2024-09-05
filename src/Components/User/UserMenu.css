@@ -1,0 +1,49 @@
+/* UserMenu.css */
+.navbar-Unique {
+  background-color: #02072D;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand-Unique {
+  font-size: 1.2rem;
+}
+
+.navbar-toggle-Unique {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navbar-menu-Unique {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list-Unique {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-list-Unique li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-list-Unique li a:hover {
+  color: #ffffffcc;
+}
+
+.navbar-brand-text-Unique  a:hover {
+  color: #ffffffcc;
+}

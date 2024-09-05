@@ -1,0 +1,17 @@
+.fix_the_position{
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    margin-right: 25%;
+}
+.button_placing_to-the_middle{
+    margin-top: 3%;
+    margin-left: 75%;
+}
+.alignthedisplay{
+    display: flex;
+    
+}
+.tofit_content{
+ width:-webkit-fill-available;
+}

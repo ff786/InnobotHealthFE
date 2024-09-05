@@ -1,0 +1,190 @@
+.claim-form-container {
+  gap: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 5%;
+  left: 2%;
+  padding: 5%;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: none; /* hide by default */
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.open {
+  display: flex; /* show when open */
+}
+.close-icon svg {
+  color: black;
+  fill: #000000;/* Set the fill color to black */
+  cursor: pointer;
+}
+.form-side{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 20px;
+  border-top: 2px solid #000000;
+
+}
+.claim-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.claim-form2 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: Adjusted;
+  margin-top: 50px;
+  align-items: center;
+
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 22px);
+    border-right: 2px solid #000000;
+}
+.form-section-2 {
+  width: calc(100% - 22px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.devb{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row label {
+  margin-left: 20px;
+}
+.form-row button{
+    align-items: left;
+}
+label{
+    font-family: serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    gap: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 250px; /* Adjusted width to accommodate padding and border */
+  height: 50px; /* Example: Set the height to match the text boxes */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"] {
+  width: calc(100% - 22px);
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+button[type="submit"],
+button[type="cancel"] {
+  padding: 5px 10px;
+  width: 150px;
+  background-color: #02072D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  gap: 10px;
+  align-items: center ;
+  margin-left: 20px;
+}
+
+button[type="submit"]:hover,
+button[type="cancel"]:hover {
+  background-color: #97A0F2;
+}n
+
+p {
+    margin-right: 0;
+}
+.top{
+    display: flex;
+    background-color: #02072D;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    justify-content: space-between;
+    padding: 10px;
+}
+.sg{
+    margin-right: 10px;
+}
+.logo{
+    display: flex;
+	margin-left: 20px;
+    align-items: center;
+}
+.logo img {
+    width: 300px;
+    height: 100px;
+}
+
+.d{
+     display: flex;
+     flex-direction: flex;
+     align-items: center;
+     cursor: pointer;
+     border-radius: 10px;
+     padding: 10px;
+     gap: 20px;
+     margin-right: 20px;
+}
+.h4{
+    font-family: serif;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+.profButton{
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.FORM_WRAP{
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+
+}

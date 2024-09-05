@@ -1,0 +1,13 @@
+.dashboard-container {
+  display: flex;
+}
+  
+.side-nav-container {
+  flex: 0 0 50px; /* Adjust width of side nav as needed */
+}
+  
+  .content-container {
+    flex: 1;
+    overflow-y: auto; /* Allow content to scroll if needed */
+  }
+  

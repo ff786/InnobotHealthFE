@@ -1,0 +1,598 @@
+
+.staff-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 220px;
+    background-color: #f2f2f2;
+    color: #02072D;
+    height: 220vh;
+    background-image: linear-gradient(45deg, #02072D, #1b9aaa, #02072D);
+    background-size: 250% 200%; /* Increase background size for animation */
+    animation: gradientAnimation 200s ease infinite; 
+    
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    50% {
+        background-position: 100% 50%; /* Middle position */
+    }
+    100% {
+        background-position: 0% 50%; /* End position */
+    }
+}
+
+    
+    .add-staff-container-unique {
+        
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        background-color: white;
+    }
+    
+    .add-staff-container-unique h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+    .staff-form-group {
+        margin-bottom: 15px;
+        
+    }
+
+    .form-group-unique label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-group-unique input[type="text"],
+    .form-group-unique input[type="email"],
+    .form-group-unique select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        color: #02072D;
+    }
+
+    .form-group-unique input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    button.unique-button {
+        padding: 5px 5px  !important; 
+        border: none;
+        border-radius: 5px;
+        background-color: #02072D;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button.unique-button:hover {
+        background-color: #1b9aaa;
+    }
+
+    .user-list-container-unique {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        background-color: white;
+    }
+
+    .user-list-container-unique h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    table.unique-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    thead.unique-thead {
+        background-color: #02072D;
+        color: white;
+    }
+
+    thead.unique-thead th {
+        padding: 10px;
+        text-align: left;
+    }
+
+    thead.unique-thead th:first-child {
+        border-top-left-radius: 5px;
+    }
+
+    thead.unique-thead th:last-child {
+        border-top-right-radius: 5px;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tbody td {
+        padding: 10px;
+    }
+
+    tbody td:first-child {
+        border-top-left-radius: 5px;
+    }
+
+    tbody td:last-child {
+        border-bottom-right-radius: 5px;
+    }
+
+    tbody button {
+        margin-right: 5px;
+    }
+
+    .form-group div {
+        margin-bottom: 5px;
+    }
+
+    /* Modal Styles */
+    .modal-unique {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        max-width: 90%;
+        width: 400px;
+        max-height: 80vh;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+    .modal-unique h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .modal-unique p {
+        margin-bottom: 20px;
+        color: #666;
+    }
+
+    .modal-unique button {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .modal-unique button:hover {
+        background-color: #0056b3;
+    }
+
+    .overlay-unique {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+    }
+
+    .div.form-Para {
+        display: inline-flex; /* Display form groups inline */
+        align-items: center; /* Align items vertically */
+    }
+    
+    div.form-Para label {
+        width: auto; /* Let labels occupy the space they need */
+        margin-right: 10px; /* Add space between label and input */
+    }
+
+    /* Add animation to labels */
+    .form-group-unique label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: #02072D; /* Text color */
+        transition: color 0.3s ease; /* Add transition for text color */
+    }
+
+    .form-group-unique label:hover {
+        color: #1b9aaa; /* Change text color on hover */
+    }
+
+    /* Add animation to form inputs */
+    .form-group-unique input[type="text"],
+    .form-group-unique input[type="email"],
+    .form-group-unique select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        color: #02072D;
+        transition: border-color 0.3s ease; /* Add transition for border color */
+    }
+
+    .form-group-unique input[type="text"]:focus,
+    .form-group-unique input[type="email"]:focus,
+    .form-group-unique select:focus {
+        border-color: #1b9aaa; /* Change border color on focus */
+    }
+
+    /* Add animation to checkboxes */
+    .form-group-unique input[type="checkbox"] {
+        margin-right: 5px;
+        transition: transform 0.3s ease; /* Add transition for transform */
+    }
+
+    .form-group-unique input[type="checkbox"]:hover {
+        transform: scale(1.1); /* Scale up checkbox on hover */
+    }
+
+    /* Add animation to buttons */
+    button.unique-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #02072D;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for background color and transform */
+    }
+
+    button.unique-button:hover {
+        background-color: #1b9aaa;
+        transform: translateY(-1px); /* Move the button slightly upwards on hover */
+    }
+
+    /* Add animation to form-group */
+    .form-group-unique {
+        margin-bottom: 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .form-group-unique:hover {
+        transform: translateY(-3px); /* Move the form group slightly upwards on hover */
+    }
+
+    /* Add animation to buttons */
+    button.unique-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #02072D;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Add transition for background color and transform */
+    }
+
+    button.unique-button:hover {
+        background-color: #1b9aaa;
+        transform: translateY(-1px); /* Move the button slightly upwards on hover */
+    }
+
+    /* Add animation to modal */
+    .modal-unique {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        max-width: 90%;
+        width: 400px;
+        max-height: 80vh;
+        overflow-y: auto;
+        z-index: 1000;
+        opacity: 0; /* Start with opacity 0 */
+        animation: fadeIn 0.3s ease forwards; /* Fade in animation */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Add animation to overlay */
+    .overlay-unique {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        opacity: 0; /* Start with opacity 0 */
+        animation: fadeInOverlay 0.3s ease forwards; /* Fade in animation */
+    }
+
+    @keyframes fadeInOverlay {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .add-staff-heading-unique {
+        font-size: 28px; /* Increase font size for the heading */
+        font-weight: bold; /* Make the heading bold */
+        color: #02072D; /* Text color */
+        margin-bottom: 20px; /* Add margin to separate heading from form */
+    }
+
+
+    /* Add animation to table */
+    table.unique-table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden; /* Hide overflow to prevent clipping of animation */
+        animation: fadeInTable 0.5s ease forwards; /* Fade in animation */
+    }
+
+    @keyframes fadeInTable {
+        from {
+            opacity: 0;
+            transform: translateY(-20px); /* Move the table upwards */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Move the table to its original position */
+        }
+    }
+
+    /* Modern animations for table headers */
+    thead.unique-thead th {
+        padding: 12px;
+        text-align: left;
+        background-color: #02072D;
+        color: #ffffff;
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+    }
+
+    thead.unique-thead th:hover {
+        background-color: #1b9aaa; /* Change background color on hover */
+    }
+
+    /* Modern animations for table rows */
+    tbody tr {
+        transition: background-color 0.3s ease; /* Smooth transition for background color */
+    }
+
+    tbody tr:hover {
+        background-color: #f2f2f2; /* Change background color on hover */
+    }
+
+    /* Modern animations for table cells */
+    tbody td {
+        padding: 10px;
+        transition: color 0.3s ease; /* Smooth transition for text color */
+    }
+
+    tbody td:hover {
+        color: #1b9aaa; /* Change text color on hover */
+    }
+
+    /* Modern animations for buttons inside table cells */
+    tbody button {
+        background-color: transparent;
+        color: #02072D;
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s ease; /* Smooth transition for text color */
+    }
+
+    tbody button:hover {
+        color: #1b9aaa; /* Change text color on hover */
+    }
+    /* Intensive animations for search input */
+    input[type="text"].unique-input {
+        width: 30%;
+        padding: 12px;
+        border: none;
+        border-radius: 30px;
+        background-color: #f2f2f2;
+        color: #02072D;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 0 transparent;
+    }
+
+    input[type="text"].unique-input:focus {
+        background-color: #ffffff;
+        border: 2px solid #1b9aaa;
+        box-shadow: 0 0 10px rgba(27, 154, 170, 0.5);
+        outline: none;
+        transform: scale(1.02);
+    }
+
+    input[type="text"].unique-input::placeholder {
+        color: #7d7d7d;
+        opacity: 0.6;
+    }
+
+    input[type="text"].unique-input::-webkit-input-placeholder {
+        color: #7d7d7d;
+        opacity: 0.6;
+    }
+
+    input[type="text"].unique-input:-moz-placeholder {
+        color: #7d7d7d;
+        opacity: 0.6;
+    }
+
+    input[type="text"].unique-input::-moz-placeholder {
+        color: #7d7d7d;
+        opacity: 0.6;
+    }
+
+    input[type="text"].unique-input:-ms-input-placeholder {
+        color: #7d7d7d;
+        opacity: 0.6;
+    }
+    .unique-img{
+
+        width:400 ;
+        height:500;
+    }/* Toggle switch */
+    .switch-unique {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    }
+
+    .switch-unique input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+    .slider-unique {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+    }
+
+    .slider-unique:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    }
+
+    input:checked + .slider-unique {
+    background-color: #2196F3;
+    }
+
+    input:focus + .slider-unique {
+    box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider-unique:before {
+    transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider-unique.round {
+    border-radius: 34px;
+    }
+
+    .slider-unique.round:before {
+    border-radius: 50%;
+    }
+    /* Toggle switch */
+    .switch-unique {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    }
+
+    .switch-unique input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    }
+
+    .slider-unique {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+    }
+
+    .slider-unique:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    }
+
+    input:checked + .slider-unique {
+    background-color: #2196F3;
+    }
+
+    input:focus + .slider-unique {
+    box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider-unique:before {
+    transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider-unique.round {
+    border-radius: 34px;
+    }
+
+    .slider-unique.round:before {
+    border-radius: 50%;
+    }
+    /* User.css */
+    .download-btn-unique {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    
+    .download-btn-unique:hover {
+        background-color: #0056b3;
+    }
+    
+    .download-icon-unique {
+        margin-right: 8px;
+    }
+
+  
